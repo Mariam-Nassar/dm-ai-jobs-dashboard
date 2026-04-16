@@ -629,7 +629,6 @@ def render_regression(df: pd.DataFrame):
             pred_df,
             x="Actual Salary",
             y="Predicted Salary",
-            trendline="ols",
             title="Actual vs Predicted Salary",
         )
         fig.update_layout(height=350)
