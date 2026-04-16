@@ -433,7 +433,7 @@ def main():
         st.warning("No data matches the selected filters. Change the filters and try again.")
         st.stop()
 
-        tabs = st.tabs([
+    tabs = st.tabs([
         "Overview",
         "Data Quality",
         "EDA",
@@ -442,13 +442,15 @@ def main():
     
     with tabs[0]:
         render_overview(filtered_df)
+    
     with tabs[1]:
         render_data_quality(filtered_df)
+    
     with tabs[2]:
         render_exploration(filtered_df)
+    
     with tabs[3]:
         render_insights(filtered_df)
-
 
 if __name__ == "__main__":
     main()
