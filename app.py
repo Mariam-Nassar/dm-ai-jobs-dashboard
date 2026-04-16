@@ -34,7 +34,7 @@ st.set_page_config(
     initial_sidebar_state="expanded",
 )
 
-CSV_FILE = "Future of Jobs AI Dataset.csv"
+CSV_FILE = "data/Future of Jobs AI Dataset.csv"
 
 EXPECTED_COLUMNS = [
     "job_title",
