@@ -199,7 +199,7 @@ CLUSTER_COLORS = ["#6c63ff","#00e5b4","#ffb347"]
 # DATA GENERATION  (mirrors dataset structure)
 # ─────────────────────────────────────────────
 @st.cache_data(show_spinner=False)
-def load_real_dataset(path="dashboard_dataset.csv"):
+def load_real_dataset(path="dashboard_dataset.xls"):
     df = pd.read_csv(path)
 
     df.columns = df.columns.str.replace('\ufeff', '', regex=False)
