@@ -960,9 +960,7 @@ with tabs[6]:
             textposition="outside",
         ))
         fig.update_layout(
-            **PLOTLY_TEMPLATE["layout"],
             title="Class Probability Distribution",
-            yaxis=dict(range=[0,110], title="Probability (%)"),
             height=350,
         )
         st.plotly_chart(fig, use_container_width=True)
@@ -976,16 +974,16 @@ with tabs[6]:
                 "axis":   {"range": [0, 100], "tickcolor": "#8888a8"},
                 "bar":    {"color": "#ff4d6d" if p_risk > 70 else "#ffb347" if p_risk > 40 else "#00e5b4"},
                 "steps":  [
-                    {"range": [0, 40],   "color": "#00e5b410"},
-                    {"range": [40, 70],  "color": "#ffb34710"},
-                    {"range": [70, 100], "color": "#ff4d6d10"},
+                    {"range": [0, 50], "color": "rgba(0,229,180,0.15)"},
+                    {"range": [40, 70],  "color": "rgba(255,179,71,0.15)"},
+                    {"range": [70, 100], "color": "rgba(255,77,109,0.15)"},
                 ],
                 "threshold": {"line": {"color": "#fff", "width": 2}, "thickness": .75, "value": p_risk},
                 "bgcolor": "#12121e",
             },
             number={"font": {"color": "#e8e8f0"}},
         ))
-        fig.update_layout(**PLOTLY_TEMPLATE["layout"], height=320)
+        fig.update_layout(height=320)
         st.plotly_chart(fig, use_container_width=True)
 
 
