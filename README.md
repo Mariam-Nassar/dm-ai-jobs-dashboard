@@ -1,214 +1,332 @@
-# AI Jobs & Salary Project
+# Workforce AI Risk Intelligence Platform
 
-Data Mining project analyzing the impact of Artificial Intelligence on job survival and salary trends.
+An end-to-end Data Mining and Machine Learning platform for analyzing the impact of Artificial Intelligence on jobs, salaries, workforce stability, and future career trends.
 
----
-
-## Team Members
-
-* Mariam Khalil
-* Samira Gamal
+The project combines data analytics, predictive modeling, clustering, anomaly detection, dimensionality reduction, and interactive business intelligence dashboards into a single professional platform.
 
 ---
 
-## Project Overview
+# Team Members
 
-Artificial Intelligence is reshaping the global job market. Some roles are becoming obsolete, while others are growing rapidly due to new technological demands.
-
-This project focuses on analyzing how AI affects:
-
-* Job survival probability
-* Salary trends across roles and countries
-* Skill demand and its impact on job stability
-
-The project also builds predictive models and an interactive dashboard to support decision-making.
+- Mariam Khalil
+- Samira Gamal
 
 ---
 
-## Objectives
+# Project Overview
 
-* Analyze the impact of AI risk on job survival
-* Identify high-risk and low-risk job categories
-* Study salary variations across countries and experience levels
-* Predict job survival class using classification models
-* Predict salary using regression models
-* Build an interactive dashboard for data exploration and insights
+Artificial Intelligence is transforming the global workforce landscape.
 
----
+Some professions are rapidly growing due to increasing technology adoption, while others face high automation risk and declining demand.
 
-## Dataset
+This project analyzes workforce trends using Machine Learning and Business Intelligence techniques to answer critical questions such as:
 
-**Name:** Future of Jobs AI Dataset (2015–2035)
-**Source:** Kaggle
+- Which jobs are most vulnerable to AI automation?
+- Which skills increase career stability?
+- How does AI risk affect salaries?
+- Which workforce groups are future-proof?
+- How can organizations prepare for workforce transformation?
 
----
-
-## Dataset Description
-
-* Total Records: 12,343
-* Time Range: 2015 to 2035
-* Countries: USA, UK, Canada, India, Germany, Australia
-* Job Titles: 10 different roles
+The platform provides predictive analytics and interactive visualizations for workforce intelligence and strategic decision-making.
 
 ---
 
-## Features
+# Main Objectives
 
-* `job_title`
-* `country`
-* `experience_level`
-* `education_level`
-* `year`
-* `salary`
-* `ai_risk_score`
-* `primary_skill`
-* `skill_demand_score`
-* `job_openings`
-
----
-
-## Target Variables
-
-* `job_survival_class`
-
-  * 0 → Low survival
-  * 1 → Medium survival
-  * 2 → High survival
-
-* `salary`
-
-  * Continuous variable used for regression
+- Analyze the relationship between AI risk and job survival
+- Identify high-risk and low-risk professions
+- Study salary trends across countries and experience levels
+- Predict workforce survival categories using classification models
+- Predict salary patterns using regression models
+- Discover workforce segments using clustering
+- Detect abnormal workforce patterns using anomaly detection
+- Reduce dimensionality using PCA visualization
+- Build a professional interactive analytics dashboard
 
 ---
 
-## Data Quality Notes
+# Dataset
 
-* Data after 2025 includes projected values
-* Salary distribution is imbalanced toward high salaries
-* No missing values detected
-* Categorical features require encoding
-* Numerical features may require normalization
+Dataset Name:
+Future of Jobs AI Dataset
 
----
-
-## Data Mining Approach (CRISP-DM)
-
-### 1. Business Understanding
-
-Define the problem of AI impact on jobs and salaries.
-Set objectives for prediction and analysis.
-
-### 2. Data Understanding
-
-Explore distributions, correlations, and trends.
-Identify patterns and anomalies.
-
-### 3. Data Preparation
-
-* Encode categorical variables
-* Normalize numerical features
-* Split data into training and testing sets
-
-### 4. Modeling
-
-#### Classification (Job Survival)
-
-* Logistic Regression
-* Random Forest Classifier
-
-#### Regression (Salary Prediction)
-
-* Linear Regression
-* Random Forest Regressor
-
-### 5. Evaluation
-
-* Classification: Accuracy, F1-score, Confusion Matrix
-* Regression: RMSE, MAE
-
-### 6. Deployment
-
-Interactive Streamlit dashboard for visualization and insights.
+Source:
+Kaggle
 
 ---
 
-## Dashboard Features
+# Dataset Description
 
-* Global filters (year, country, job title, etc.)
-* KPI summary cards
-* Data exploration charts
-* Salary analysis section
-* Job survival analysis section
-* Business insights panel
-* Phase 2 roadmap
+- Records: 17,000+
+- Time Range: 2015 — 2024
+- Multiple Countries Included
+- Multiple Job Categories
+- Workforce and AI-related indicators
 
 ---
 
-## Project Structure
+# Main Features
 
-```
-dm-ai-jobs-dashboard/
+- job_title
+- country
+- experience_level
+- education_level
+- year
+- salary
+- ai_risk_score
+- primary_skill
+- skill_demand_score
+- job_openings
+
+---
+
+# Target Variables
+
+## Classification Target
+
+job_survival_class
+
+Classes:
+
+- 0 → At Risk
+- 1 → Stable
+- 2 → Growing
+
+## Regression Target
+
+salary
+
+Used for salary prediction models.
+
+---
+
+# Data Preparation
+
+The preprocessing pipeline includes:
+
+- Missing value handling
+- Data cleaning
+- Feature engineering
+- Encoding categorical variables
+- Feature scaling
+- Outlier analysis
+- Feature transformation
+- Dataset splitting
+
+Additional engineered features include:
+
+- Risk-demand interaction
+- Human capital index
+- AI vulnerability score
+- Openings growth rate
+
+---
+
+# Machine Learning Models
+
+## Classification Models
+
+### Logistic Regression
+
+Used as a baseline classification model.
+
+### Random Forest Classifier
+
+Used for workforce survival prediction.
+
+Evaluation Metrics:
+
+- Accuracy
+- Macro F1-score
+- Confusion Matrix
+
+---
+
+## Regression Models
+
+### Linear Regression
+
+Baseline salary prediction model.
+
+### Random Forest Regressor
+
+Advanced nonlinear salary prediction model.
+
+Evaluation Metrics:
+
+- RMSE
+- MAE
+- R² Score
+
+---
+
+# Clustering
+
+K-Means clustering was applied to identify workforce segments based on:
+
+- Salary
+- AI risk
+- Skill demand
+- Job openings
+
+The clustering process identifies different workforce profiles such as:
+
+- Vulnerable roles
+- Transitional roles
+- Future-proof roles
+
+---
+
+# Anomaly Detection
+
+Isolation Forest was used to detect unusual workforce records and abnormal career patterns.
+
+This helps identify:
+
+- Uncommon salary structures
+- High-risk outlier jobs
+- Rare workforce conditions
+
+---
+
+# PCA Dimensionality Reduction
+
+Principal Component Analysis (PCA) was applied to:
+
+- Reduce dimensionality
+- Visualize workforce patterns
+- Improve interpretability
+- Explore feature relationships
+
+---
+
+# Interactive Dashboard Features
+
+The Streamlit dashboard includes:
+
+- Professional dark-themed UI
+- Interactive global filters
+- KPI analytics cards
+- Workforce risk analysis
+- Salary intelligence analytics
+- Country-level comparisons
+- Clustering visualization
+- Anomaly detection insights
+- PCA visualization
+- Real-time prediction engine
+- Business intelligence insights
+
+---
+
+# Business Intelligence Capabilities
+
+The platform generates insights related to:
+
+- Workforce transformation
+- AI-driven job disruption
+- Skill demand forecasting
+- Salary intelligence
+- Career sustainability
+- Workforce segmentation
+
+---
+
+# Technologies Used
+
+## Programming & Analytics
+
+- Python
+- Pandas
+- NumPy
+
+## Machine Learning
+
+- Scikit-learn
+
+## Visualization
+
+- Plotly
+- Streamlit
+
+## Development Tools
+
+- Git
+- GitHub
+- Jupyter Notebook
+- VS Code
+
+---
+
+# Project Structure
+
+```text
+dm-ai-jobs-project/
 │
-├── app.py
+├── app_professional.py
 ├── requirements.txt
 ├── README.md
 │
 ├── data/
+│   ├── prepared_dataset_full.csv
+│   ├── prepared_dataset_full.xls
+│   └── prepared_dataset_topk.xls
+│
 ├── notebooks/
-├── src/
-├── assets/
-└── docs/
+│
+├── model_artifacts/
+│
+└── assets/
 ```
 
----
+## How to Run the Project
 
-## How to Run Locally
+1. Install Dependencies
 
-### 1. Install dependencies
+   pip install -r requirements.txt
+   
+2. Run the Dashboard
+   
+   streamlit run app_professional.py
 
-pip install -r requirements.txt
 
-### 2. Run the dashboard
+## Key Platform Modules
 
-streamlit run app.py
+Exploratory Data Analysis
 
----
+Classification
 
-## Phase 1 Status
+Regression
 
-* Problem defined
-* Dataset selected and analyzed
-* CRISP-DM plan prepared
-* Initial dashboard prototype created
-* Exploratory data analysis completed
+Clustering
 
----
+Anomaly Detection
 
-## Phase 2 Plan
+PCA Visualization
 
-* Data preprocessing and feature engineering
-* Train and tune machine learning models
-* Evaluate model performance
-* Integrate model results into dashboard
-* Prepare final presentation
+Live Prediction Engine
 
----
+Business Insights
 
-## Future Work
 
-* Improve model accuracy
-* Add more advanced visualizations
-* Deploy dashboard online
-* Expand dataset with more countries or roles
+## Future Improvements
 
----
+Hyperparameter optimization
 
-## Tools & Technologies
+Deep learning integration
 
-* Python
-* Pandas
-* NumPy
-* Plotly
-* Streamlit
-* Scikit-learn
-* Git & GitHub
+Online deployment
+
+Real-time labor market APIs
+
+More countries and industries
+
+Explainable AI analytics
+
+
+## Conclusion
+
+This platform demonstrates how Data Mining and Machine Learning can support workforce intelligence and strategic decision-making in the age of Artificial Intelligence.
+
+The project combines predictive analytics, business intelligence, and interactive visualization into a unified professional analytics system.
+
+
