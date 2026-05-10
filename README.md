@@ -1,8 +1,18 @@
-# Workforce AI Risk Intelligence Platform
+# AI Impact on Jobs & Salary Trends
 
-An end-to-end Data Mining and Machine Learning platform for analyzing the impact of Artificial Intelligence on jobs, salaries, workforce stability, and future career trends.
+An end-to-end Data Mining and Machine Learning project analyzing how Artificial Intelligence is reshaping the global workforce, salary trends, job stability, and future career growth.
 
-The project combines data analytics, predictive modeling, clustering, anomaly detection, dimensionality reduction, and interactive business intelligence dashboards into a single professional platform.
+The project follows the complete CRISP-DM methodology and combines Machine Learning, Business Intelligence, interactive visualization, clustering, anomaly detection, and predictive analytics into a single professional analytics platform.
+
+---
+
+# Live Demo
+
+Dashboard:  
+https://dm-ai-jobs-project.streamlit.app/
+
+GitHub Repository:  
+https://github.com/Mariam-Nassar/dm-ai-jobs-project
 
 ---
 
@@ -15,19 +25,19 @@ The project combines data analytics, predictive modeling, clustering, anomaly de
 
 # Project Overview
 
-Artificial Intelligence is transforming the global workforce landscape.
+Artificial Intelligence is rapidly transforming labor markets worldwide.
 
-Some professions are rapidly growing due to increasing technology adoption, while others face high automation risk and declining demand.
+Some jobs are becoming more valuable due to increasing technology adoption, while others face high automation risk and declining demand.
 
-This project analyzes workforce trends using Machine Learning and Business Intelligence techniques to answer critical questions such as:
+This project uses Data Mining and Machine Learning techniques to analyze workforce transformation and answer important business questions such as:
 
 - Which jobs are most vulnerable to AI automation?
-- Which skills increase career stability?
+- Which skills improve career stability?
 - How does AI risk affect salaries?
 - Which workforce groups are future-proof?
 - How can organizations prepare for workforce transformation?
 
-The platform provides predictive analytics and interactive visualizations for workforce intelligence and strategic decision-making.
+The platform provides predictive analytics and interactive business intelligence dashboards for workforce analysis and strategic decision-making.
 
 ---
 
@@ -45,20 +55,31 @@ The platform provides predictive analytics and interactive visualizations for wo
 
 ---
 
+# CRISP-DM Workflow
+
+1. Business Understanding
+2. Data Understanding
+3. Data Preparation
+4. Modeling
+5. Evaluation
+6. Deployment
+
+---
+
 # Dataset
 
-Dataset Name:
+Dataset Name:  
 Future of Jobs AI Dataset
 
-Source:
+Source:  
 Kaggle
 
 ---
 
 # Dataset Description
 
-- Records: 17,000+
-- Time Range: 2015 — 2024
+- Records: 50,000+
+- Time Range: 2015 — 2025
 - Multiple Countries Included
 - Multiple Job Categories
 - Workforce and AI-related indicators
@@ -104,8 +125,8 @@ Used for salary prediction models.
 
 The preprocessing pipeline includes:
 
-- Missing value handling
 - Data cleaning
+- Leakage removal
 - Feature engineering
 - Encoding categorical variables
 - Feature scaling
@@ -115,10 +136,10 @@ The preprocessing pipeline includes:
 
 Additional engineered features include:
 
-- Risk-demand interaction
-- Human capital index
-- AI vulnerability score
-- Openings growth rate
+- risk_demand_interaction
+- human_capital_index
+- ai_vulnerability
+- openings_growth_rate
 
 ---
 
@@ -200,34 +221,83 @@ Principal Component Analysis (PCA) was applied to:
 
 ---
 
-# Interactive Dashboard Features
+# Key Results
 
-The Streamlit dashboard includes:
-
-- Professional dark-themed UI
-- Interactive global filters
-- KPI analytics cards
-- Workforce risk analysis
-- Salary intelligence analytics
-- Country-level comparisons
-- Clustering visualization
-- Anomaly detection insights
-- PCA visualization
-- Real-time prediction engine
-- Business intelligence insights
+- Random Forest Classification Accuracy: 85%
+- Macro F1-score: 0.83
+- Random Forest Regression R²: 0.87
+- 3 workforce clusters discovered
+- Isolation Forest detected approximately 5% anomalies
 
 ---
 
-# Business Intelligence Capabilities
+# Interactive Dashboard
 
-The platform generates insights related to:
+The project includes a fully interactive Streamlit dashboard for workforce intelligence and business analytics.
 
-- Workforce transformation
-- AI-driven job disruption
-- Skill demand forecasting
-- Salary intelligence
-- Career sustainability
-- Workforce segmentation
+Dashboard Features:
+
+- Interactive global filters
+- Workforce risk analysis
+- Salary intelligence analytics
+- Country-level comparisons
+- Classification prediction system
+- Regression prediction engine
+- Clustering visualization
+- Anomaly detection insights
+- PCA visualization
+- Business intelligence insights
+
+Dashboard Sections:
+
+- Classification Panel
+- Regression Panel
+- Clustering Analysis
+- Anomaly Explorer
+- PCA Visualization
+- Business Insights Panel
+
+Live Dashboard:  
+https://dm-ai-jobs-project.streamlit.app/
+
+---
+
+# Dashboard Preview
+
+Add dashboard screenshots here.
+
+Example:
+
+![Dashboard Screenshot](assets/dashboard.png)
+
+---
+
+# How to Run the Project
+
+## 1. Clone the Repository
+
+```bash
+git clone https://github.com/Mariam-Nassar/dm-ai-jobs-project.git
+cd dm-ai-jobs-project
+```
+
+## 2. Install Dependencies
+
+```bash
+pip install -r requirements.txt
+```
+
+## 3. Run the Dashboard
+
+```bash
+streamlit run app_professional.py
+```
+
+## 4. Open in Browser
+
+```text
+http://localhost:8501
+```
 
 ---
 
@@ -243,10 +313,12 @@ The platform generates insights related to:
 
 - Scikit-learn
 
-## Visualization
+## Visualization & Dashboard
 
 - Plotly
 - Streamlit
+- Matplotlib
+- Seaborn
 
 ## Development Tools
 
@@ -272,61 +344,42 @@ dm-ai-jobs-project/
 │   └── prepared_dataset_topk.xls
 │
 ├── notebooks/
+│   ├── preprocessing.ipynb
+│   └── modeling_evaluation.ipynb
 │
 ├── model_artifacts/
 │
 └── assets/
 ```
 
-## How to Run the Project
+---
 
-1. Install Dependencies
+# Key Platform Modules
 
-   pip install -r requirements.txt
-   
-2. Run the Dashboard
-   
-   streamlit run app_professional.py
+- Exploratory Data Analysis
+- Classification
+- Regression
+- Clustering
+- Anomaly Detection
+- PCA Visualization
+- Live Prediction Engine
+- Business Insights
 
+---
 
-## Key Platform Modules
+# Future Improvements
 
-Exploratory Data Analysis
+- Hyperparameter optimization
+- Deep learning integration
+- Real-time labor market APIs
+- Explainable AI analytics
+- Cloud scalability
+- Real-world workforce datasets
 
-Classification
+---
 
-Regression
+# Conclusion
 
-Clustering
+This project demonstrates how Data Mining and Machine Learning can support workforce intelligence and strategic decision-making in the age of Artificial Intelligence.
 
-Anomaly Detection
-
-PCA Visualization
-
-Live Prediction Engine
-
-Business Insights
-
-
-## Future Improvements
-
-Hyperparameter optimization
-
-Deep learning integration
-
-Online deployment
-
-Real-time labor market APIs
-
-More countries and industries
-
-Explainable AI analytics
-
-
-## Conclusion
-
-This platform demonstrates how Data Mining and Machine Learning can support workforce intelligence and strategic decision-making in the age of Artificial Intelligence.
-
-The project combines predictive analytics, business intelligence, and interactive visualization into a unified professional analytics system.
-
-
+The platform combines predictive analytics, business intelligence, and interactive visualization into a unified analytics system.
